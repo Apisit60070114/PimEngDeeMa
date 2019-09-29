@@ -13,7 +13,7 @@ function init() {
         songDisplay.innerHTML = `
         <div class="pd">
             <p>${songs[i].name}</p>
-            <img src="assets/img/song${songs[i].id}.jpg" alt="">
+            <img src="./assets/img/song${songs[i].id}.jpg" alt="">
             <button class="start-btn" onclick="start(${songs[i].id})">Slect</button>
         <div>
             `;
@@ -23,7 +23,7 @@ function init() {
 
 function start(songId) {
     let song = songs[songId]
-    let audio = new Audio(`assets/song${song.id}.mp3`);
+    let audio = new Audio(`./assets/song${song.id}.mp3`);
     audio.loop = true;
     setInterval(counTime, 1000);
     audio.play();

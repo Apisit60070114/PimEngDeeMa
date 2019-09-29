@@ -1,11 +1,11 @@
 @font-face {
   font-family: futura;
-  src: url("assets/fonts/futura.ttf");
+  src: url("./assets/fonts/futura.ttf");
 }
 
 @font-face {
   font-family: neon;
-  src: url("assets/fonts/neon.ttf");
+  src: url("./assets/fonts/neon.ttf");
 }
 
 body {
