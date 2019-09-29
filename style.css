@@ -9,6 +9,7 @@
 }
 
 body {
+  text-align: center;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -33,6 +34,46 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.start {
+  display: none;
+}
+
+.songs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+.song {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.pd {
+  padding: 15px;
+}
+
+.song img {
+  width: 80%;
+  padding: 8px 0;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.song p {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
 .letter {
   position: relative;
   display: inline;
@@ -50,11 +91,10 @@ body {
 }
 
 .start-btn {
-  display: none;
   border-radius: 3px;
   margin: auto;
-  padding: 8px;
-  font-size: 24px;
+  padding: 5px;
+  font-size: 14px;
   border: 1px white solid;
   color: white;
   background-color: #fff0;
@@ -90,11 +130,11 @@ audio {
 
 .title {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-family: neon;
-  font-size: 32px;
+  font-size: 48px;
   color: #ffffff;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #00f, 0 0 80px #00f, 0 0 90px #00f, 0 0 100px #00f, 0 0 150px #00f;
@@ -170,7 +210,7 @@ audio {
 
 @keyframes startTitle {
   0% {
-    top: 30%;
+    top: 20%;
   }
   100% {
     top: 12px;
